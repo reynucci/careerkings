@@ -1,0 +1,431 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(career5.jpeg.jpeg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+}
+.title{
+    display: flex;
+    align-items: center;
+}
+.title h1{
+    padding-left: 20px;
+    font-size: 60px;
+    color: white;
+    font-family: 'Nanum Myeongjo', serif;
+
+}
+.ck{
+    width: 120px;
+    box-shadow: 6px 8px 12px red;
+    margin-right: 20px;
+}
+nav img{
+    width: 100%;
+  
+}
+/*.ck::before{
+    content: "";
+    background-image: conic-gradient(
+        red 20deg,
+        transparent 120deg
+    );
+    width: 150%;
+    height: 150%;
+    position: absolute;
+    animation: rotate 2s linear infinitive;
+    border-radius: 10px;
+    
+}
+@keyframes Rotate {
+    0%{
+       transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-360deg);
+    }
+ }*/
+
+ 
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding:  0% 12px;
+    position: relative;
+    margin-top: 7%;
+}
+.nav-links ul li a{
+    font-size: 13px;
+    color: white;
+}
+.svg{
+    display: none;
+    
+}
+
+svg{
+    margin-right: 10px;
+    stroke: #f44336;
+    fill: transparent;
+}
+.nav-links ul li::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.text-box{
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    left: 14%;
+    width: 70%;
+}
+.text-box h2{
+    font-size: 62px;
+    color: white ;
+}
+ .text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: white;
+ }
+ .visit-btn{
+    display: inline-block;
+    color: white;
+    border: 1px solid white;
+    padding: 12px 34px;
+    font-size: 13px;
+    position: relative;
+    cursor: pointer;
+    transition: 1s;
+ }
+ .visit-btn:hover{
+    border: 1px solid #f44336;
+    background: #f44336;
+ }
+ @media (max-width: 700px) {
+    .title{
+        display: flex;
+        align-items: center;
+    }
+    .title h1{
+        padding-left: 5px;
+        font-size: 20px;
+        color: white;
+        font-family: 'Nanum Myeongjo', serif;
+     }
+     .ck{
+        width: 60px;
+        box-shadow: 6px 8px 12px red;
+        margin-right: 20px;
+    }
+    nav img{
+        width: 100%;
+      
+    }
+        .text-box{
+            position: absolute;
+            top: 50%;
+            text-align: center;
+            left: 4%;
+        }
+    
+    .text-box h2{
+        font-size: 20px;
+        color: white ;
+    }
+    .nav-links ul li{
+        list-style: none;
+        display: block;
+        margin: 30px 0;
+    }
+    .nav-links{
+        position: absolute;
+        background: #f44336;
+        height: 100vh;
+        width: 200px;
+        right: -200px;
+        top: 0;
+        text-align: left;
+        z-index: 2;
+        transition: 1s ;
+    }
+    .svg{
+        display: block;
+        margin: 20px;
+        stroke: white;
+        height: 30px;
+        width: 30px;
+        cursor: pointer;
+
+    }
+    svg{
+        stroke: white;
+        margin-left: 15%;
+    
+    }
+    .nav-links ul li::after{
+        content: "";
+        width: 0%;
+        height: 2px;
+        background: white;
+        display: block;
+        margin: auto;
+        transition: 0.5s;
+    }
+    .nav-links ul li:hover::after{
+        width: 100%;
+  }
+ 
+  }
+
+  .courses{
+    width: 80%;
+    text-align: center;
+    height: 80vh;
+    margin: auto;
+    padding-top: 100px;
+    
+  }
+   .courses p{
+    font-size: 14px;
+    font-weight: 300px;
+    line-height: 22px;
+    padding: 10px;
+    color: blue;
+  }
+  .courses h2{
+    font-size: 45px;
+    font-weight: bold;
+    cursor: alias;
+  }
+  .courses h2::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.courses h2:hover::after{
+    width: 60%;
+ }
+  .course-row{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    
+  }
+  .course-col h3{
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  .course-col{
+    flex-basis: 31%;
+    background: #fff3f3;
+    padding: 20px 12px;
+    transition: 0.5s;
+  }
+  .course-col:hover{
+     box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+  }
+
+@media (max-width: 700px){
+    .course-row{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        
+     }
+     .course-col{
+        flex-basis: 25%;
+        background: #fff3f3;
+        margin-top: 30px;
+        transition: 0.5s;
+      }
+      .course-col:hover{
+        box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+     }
+     .courses h2::after{
+        content: "";
+        width: 0%;
+        height: 2px;
+        background: #f44336;
+        display: block;
+        margin: auto;
+        transition: 0.5s;
+    }
+    .courses h2:hover::after{
+        width: 100%;
+     }
+}
+.documents{
+    height: auto;
+    width: 80%;
+    margin: auto;
+    line-height: 10px;
+    text-align: center;
+}
+.documents p{
+    color: blue;
+    margin-top: 20px;
+}
+.documents h2{
+    font-size: 45px;
+    font-weight: bold;
+    cursor: alias;
+}
+.documents h2::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.documents h2:hover::after{
+    width: 60%;
+ }
+ .documents-row{
+    display: flex;
+    padding: 30px 0;
+    justify-content: space-between;
+ }
+  
+.documents-col{
+    position: relative;
+    width: 32%;
+    height: 250px;
+    border-radius: 10px;
+}
+
+.documents-col img{
+     width: 100%;
+     height: 100%;
+     border-radius: 10px;
+    
+ }
+ .layer{
+    position: absolute;
+    border-radius: 10px;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    transition: 1s;
+}
+.layer:hover{
+    background-color: rgba(226, 0, 0, 0.3);
+}
+.layer h3{
+    width: 100%;  
+    font-weight: 500;  
+    color: #fff;  
+    font-size: 26px; 
+    position: absolute; 
+    bottom: 0; 
+    left: 45%; 
+    transform: translateX(-45%);
+    opacity: 0;
+    transition: 0.5s;
+   
+}
+
+.layer:hover h3{
+    bottom: 50%;
+    opacity: 1; }
+
+
+
+@media (max-width: 700px) {
+    .documents{
+        margin-top: 10rem;
+    }
+    .documents-row{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+    }
+    .documents-col{
+        margin: 10px;
+        width: 100%;
+    }
+    .documents p{
+        padding-top: 40px;
+        line-height: 20px;
+    
+    }
+    
+     }
+
+.footer{ 
+    
+    width: 100%;
+    text-align: center;
+    padding: 70px 0;
+
+}
+.footer h2{
+     margin: 25px 0 20px 0;
+     font-weight: bold;
+     font-size: 45px;
+     cursor: alias;
+   
+}
+.footer h2::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.footer h2:hover::after{
+    width: 60%;
+ }
+
+.footer p{
+    padding-bottom: 30px;
+    color: blue;
+    
+}
+.icons{
+    height: 30px;
+    width: 30px;
+    margin: 10px;
+    stroke: green;
+    
+}
+.tel{
+    stroke: green;
+}
